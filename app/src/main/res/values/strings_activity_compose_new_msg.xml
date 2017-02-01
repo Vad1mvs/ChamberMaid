@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="title_activity_compose_new_msg">Новое сообщение</string>
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Имя</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="prompt_old_password">Старый пароль</string>
+    <string name="prompt_new_password">Новый пароль</string>
+    <string name="prompt2_new_password">Повтор нового пароля</string>
+    <string name="prompt_subj">Тема</string>
+    <string name="prompt_msg">Сообщение</string>
+    <string name="action_save_msg">Сохранить</string>
+    <string name="action_msg_choose_recipient">Получатель</string>
+<!--     <string name="action_sign_in_register"><b>Sign in</b> or register</string> -->
+    <string name="action_sign_in_register">Вход</string>
+    <string name="action_sign_in_short">Вход</string>
+    <string name="action_change_password">Изменить пароль</string>
+    <string name="action_OK">OK</string>
+    <string name="action_Save">Сохранить</string>
+    <string name="action_Cancel">Отменить</string>
+    <string name="action_Clear">Очистить</string>
+    <string name="action_get_rooms">Загрузить информацию о комнатах</string>
+    <string name="action_show_rooms_dump">Показать ответ сервера</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">Входим в систему&#8230;</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_incorrect_password">Неверный пароль</string>
+    <string name="error_get_sign_emp">Ошибка получения имени</string>
+    <string name="error_field_required">Это поле обязательно</string>
+    <string name="error_server">Ошибка сервера</string>
+    <string name="error_psw_not_match">Пароли не совпадают</string>
+    <string name="error_psw_new_old">Новый пароль должен отличаться от старого</string>
+    <string name="ch_psw_progress">Меняем пароль&#8230;</string>
+    <string name="title_ch_psw">Изменение пароля</string>
+    <string name="res_ch_psw_ok">Пароль изменен успешно</string>
+    <string name="res_ch_psw_err">Не удалось изменить пароль</string>
+    
+</resources>

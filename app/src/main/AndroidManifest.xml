@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.utis.chambermaid"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.01">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/utis_logo_64"
+        android:label="@string/app_name_ru"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".notnow.WelcomeActivity"
+            android:label="@string/app_name_ru"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConnectSettingsActivity"
+            android:label="@string/title_activity_connect_settings">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+        </activity>
+        <activity
+            android:name=".notnow.LogsActivity"
+            android:label="@string/title_activity_log"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service android:name=".ConnectionManagerService"/>
+
+        <provider
+            android:name=".ChambermaidContentProvider"
+            android:authorities="com.utis.chambermaid.dbprovider"/>
+
+        <activity
+            android:name=".MainRoomsActivity"
+            android:label="@string/title_activity_main_rooms"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".RoomBarGoodsActivity"
+            android:label="@string/title_activity_room_bar_goods"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".RoomsListActivity"
+            android:label="@string/title_activity_rooms_list"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".HotelRoomsActivity"
+            android:label="@string/title_activity_hotel_room"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".HotelRoomsActivity2"
+            android:label="@string/title_activity_hotel_rooms_activity2"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".RoomActivity"
+            android:label="@string/title_activity_room"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".notnow.ShowDumpActivity"
+            android:label="@string/title_activity_show_dump">
+        </activity>
+        <activity
+            android:name=".HotelRoomsSwipeActivity"
+            android:label="@string/title_activity_hotel_rooms_swipe"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".RoomSwipeActivity"
+            android:label="@string/title_activity_room_swipe"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <receiver
+            android:name=".notnow.WiFiBroadcast"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".notnow.IpAddActivity"
+                  android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity android:name=".InsertItemListActivity">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,253 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Login form -->
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			<LinearLayout
+				android:id="@+id/login_layout"
+				style="@style/LoginFormContainer"
+				android:orientation="vertical" >
+				<TextView
+                    android:id="@+id/captionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/userTextView"
+                    android:text="@string/caption_choose_user"
+					android:textColor="@color/caption"
+                    android:textSize="18dp"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:id="@+id/tvId"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/userChooser"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:prompt="@string/caption_choose_user"
+                    android:visibility="invisible"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/entTextView"
+                    android:text="@string/caption_choose_owner"
+                    android:textColor="@color/caption"
+                    android:textSize="18dp"
+                    android:textStyle="normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hotel"
+                    android:id="@+id/tvEnt"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="18dp"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/entChooser"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:prompt="@string/caption_choose_owner"
+                    android:visibility="invisible"/>
+
+                <EditText
+					android:id="@+id/email"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/prompt_email"
+					android:inputType="textEmailAddress"
+					android:maxLines="1"
+                    android:visibility="gone"
+					android:singleLine="true" />
+				<EditText
+					android:id="@+id/password"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/prompt_password"
+					android:imeActionId="@+id/login"
+					android:imeActionLabel="@string/action_sign_in_short"
+					android:imeOptions="actionUnspecified"
+					android:inputType="textPassword"
+					android:maxLines="1"
+					android:singleLine="true" />
+				<EditText
+					android:id="@+id/new_password"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/prompt_new_password"
+					android:imeActionId="@+id/login"
+					android:imeActionLabel="@string/action_sign_in_short"
+					android:imeOptions="actionUnspecified"
+					android:inputType="textPassword"
+					android:maxLines="1"
+					android:singleLine="true"
+					android:visibility="gone" />
+				<EditText
+					android:id="@+id/new_password2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="@string/prompt2_new_password"
+					android:imeActionId="@+id/login"
+					android:imeActionLabel="@string/action_sign_in_short"
+					android:imeOptions="actionUnspecified"
+					android:inputType="textPassword"
+					android:maxLines="1"
+					android:singleLine="true"
+					android:visibility="gone" />
+				<RelativeLayout
+					android:id="@+id/button_Container"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+					android:orientation="horizontal" >
+					<Button
+						android:id="@+id/change_psw_button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:layout_marginTop="16dp"
+                        android:visibility="invisible"
+						android:paddingLeft="12dp"
+						android:paddingRight="12dp"
+						android:text="@string/action_change_password" />
+					<Button
+						android:id="@+id/sign_in_button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingLeft="32dp"
+						android:paddingRight="32dp"
+						android:textStyle="normal"
+						android:alpha="1.0"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/caption"
+						android:text="@string/action_sign_in_register" />
+
+                </RelativeLayout>
+				<LinearLayout
+					android:id="@+id/button_Container2"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:visibility="gone" >
+					<Button
+						android:id="@+id/Cancel_button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:layout_marginTop="16dp"
+						android:paddingLeft="16dp"
+						android:paddingRight="16dp"
+						android:text="@string/action_Cancel" />
+					<Button
+						android:id="@+id/OK_button"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:layout_marginTop="16dp"
+						android:paddingLeft="32dp"
+						android:paddingRight="32dp"
+						android:text="@string/action_OK" />
+				</LinearLayout>
+			</LinearLayout>
+            <LinearLayout
+                android:id="@+id/owner_layout"
+                style="@style/LoginFormContainer"
+                android:visibility="gone"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    android:text="@string/caption_choose_owner" />
+                <Spinner
+                    android:id="@+id/ownerChooser"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:prompt="@string/caption_choose_owner"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/owner_Cancel_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/action_Cancel" />
+                    <Button
+                        android:id="@+id/owner_OK_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp"
+                        android:text="@string/action_OK" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</merge>

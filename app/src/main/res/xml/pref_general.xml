@@ -1,0 +1,90 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_logging_checkbox_key"
+        android:summary="@string/pref_description_logging"
+        android:title="@string/pref_title_logging" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="@string/pref_debug_checkbox_key"
+        android:summary="@string/pref_description_debug"
+        android:title="@string/pref_title_debug" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_server_addr"
+        android:inputType="textUri"
+        android:key="@string/pref_server_addr_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_server_addr" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_update_server_addr"
+        android:inputType="textUri"
+        android:key="@string/pref_update_server_addr_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_update_server_addr" />
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_user"
+        android:inputType="textUri"
+        android:key="@string/pref_user_id_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_connect_user" />
+
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_position"
+        android:inputType="textUri"
+        android:key="@string/pref_position_key"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_connect_position" />
+
+
+
+
+    <Preference
+        android:key="intent"
+        android:title="Добавить IP гостинице"
+        android:defaultValue="переход"
+        />
+
+
+
+    <!--
+         NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it.
+    -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <!-- 
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_server_list_titles"
+        android:entryValues="@array/pref_server_list_values"
+        android:key="server_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_connect_2_server" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/pref_location_provider_list_titles"
+        android:entryValues="@array/pref_location_provider_list_values"
+        android:key="location_provider_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_location_provider" />
+		--> 
+		    
+</PreferenceScreen>

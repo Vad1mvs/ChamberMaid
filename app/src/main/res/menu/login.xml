@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_forgot_password"
+        android:showAsAction="never"
+        android:visible="false"
+        android:title="@string/action_forgot_password"/>
+    <item
+        android:id="@+id/action_get_rooms"
+        android:showAsAction="never"
+        android:visible="false"
+        android:title="@string/action_get_rooms"/>
+    <item
+        android:id="@+id/action_show_rooms_dump"
+        android:showAsAction="never"
+        android:visible="true"
+        android:title="@string/action_show_rooms_dump"/>
+
+</menu>

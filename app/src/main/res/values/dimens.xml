@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="footer_vertical_margin">2dp</dimen>
+    <dimen name="footer_horizontal_margin">2dp</dimen>
+    <dimen name="activity_horizontal_z_margin">0dp</dimen>
+    <dimen name="activity_vertical_z_margin">0dp</dimen>
+    <dimen name="rooms_listview_horizontal_margin">16dp</dimen>
+
+    <dimen name="gds_text_size">18sp</dimen>
+    <dimen name="room_list_font_size">35sp</dimen>
+    <dimen name="room_list_time_font_size">20sp</dimen>
+    <dimen name="room_num_font_size">120sp</dimen>
+    <dimen name="room_btn_font_size">32sp</dimen>
+    <dimen name="btn_left_margin">40dp</dimen>
+    <dimen name="room_img_lr_margin">80dp</dimen>
+    <dimen name="door_padding_top">34dp</dimen>
+
+</resources>

@@ -1,0 +1,294 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.utis.chambermaid.RoomActivity">
+    <TextView
+        android:id="@+id/txtRoomNum"
+        android:text="123"
+        android:textSize="@dimen/room_num_font_size"
+        android:textStyle="bold"
+        android:textColor="@color/empty"
+        android:layout_marginTop="-20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginBottom="0dp" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/even_row"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/room_img_lr_margin"
+        android:layout_marginLeft="@dimen/room_img_lr_margin"
+        layout="@layout/rooms_even_row" />
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/room_img_lr_margin"
+        android:layout_marginLeft="@dimen/room_img_lr_margin"
+        android:id="@+id/odd_row"
+        layout="@layout/rooms_odd_row" />
+
+    <TextView
+        android:id="@+id/txtChangeBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/odd_row" />
+    <TextView
+        android:id="@+id/txtDepartureDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtChangeBed" />
+    <TextView
+        android:id="@+id/txtReservationDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtDepartureDate" />
+    <TextView
+        android:id="@+id/txtAcceptCheckNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/m_accept_check_number"
+        android:textColor="@color/red"
+        android:layout_below="@+id/txtReservationDate"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/txtReservationDate"
+        android:textSize="18dp"
+        android:text="text name chambermaid"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/rlImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="20dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/txtRoomNum">
+        <ImageView
+            android:id="@+id/personRoom"
+            android:src="@drawable/person64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/broomRoom"
+            android:src="@drawable/broom64"
+            android:layout_toRightOf="@+id/personRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtExit"
+        android:text="После проверки нажать кнопку НОМЕР ПРИНЯТ"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtAcceptCheckNumber"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:visibility="gone" />
+    <!--android:text="После проверки нажать кнопку ВЫЕЗД"-->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/btnBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/mini_bar"
+        android:layout_above="@+id/btnBed"
+        android:layout_alignLeft="@+id/btnBed"
+        android:layout_alignStart="@+id/btnBed"
+        android:layout_alignRight="@+id/btnQuit"
+        android:layout_alignEnd="@+id/btnQuit"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="МИНИБАР"
+            android:id="@+id/tvMiniBar"
+            android:layout_above="@+id/btnBar"
+            android:layout_alignRight="@+id/btnBar"
+            android:layout_alignEnd="@+id/btnBar"
+            android:layout_alignLeft="@+id/btnBar"
+            android:layout_alignStart="@+id/btnBar"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/btnBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:orientation="horizontal"
+            android:layout_above="@+id/btnBed"
+            android:layout_alignLeft="@+id/btnBed"
+            android:layout_alignStart="@+id/btnBed"
+            android:layout_alignRight="@+id/btnQuit"
+            android:layout_alignEnd="@+id/btnQuit"
+            >
+
+            <Button
+                android:id="@+id/btnBarSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maroon"
+                android:text="@string/btn_sale"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginBottom="3dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_store"
+                android:id="@+id/btnMovement"
+                android:layout_above="@+id/btnBar"
+                android:layout_alignLeft="@+id/btnBar"
+                android:layout_alignStart="@+id/btnBar"
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:textStyle="bold"
+                android:textColor="@color/dkgreen"
+                android:textSize="13dp"
+                android:layout_marginBottom="3dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnAcceptCheckRoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:text="ПРИРНЯТЬ ВЫЗОВ"
+        android:textSize="@dimen/room_btn_font_size"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_marginLeft="@dimen/btn_left_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rlImages"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/btnBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dkgreen"
+        android:text="@string/btn_need_change_bed"
+        android:textSize="@dimen/room_btn_font_size"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/btnQuit"
+        android:layout_above="@+id/btnQuit"
+        android:layout_alignRight="@+id/btnQuit"
+        android:layout_alignEnd="@+id/btnQuit"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dkgreen"
+        android:text="@string/btn_need_service"
+        android:textSize="@dimen/room_btn_font_size"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/btnQuit"
+        android:layout_alignRight="@+id/btnQuit"
+        android:layout_alignEnd="@+id/btnQuit"
+        android:layout_alignLeft="@+id/btnBed"
+        android:layout_alignStart="@+id/btnBed"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/maroon"
+        android:text="@string/btn_quit"
+        android:textSize="@dimen/room_btn_font_size"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/btn_left_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnMessage"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btnMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/btn_msg"
+        android:textSize="@dimen/room_btn_font_size"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/btn_left_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRepairNote"
+        android:layout_below="@+id/even_row"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="100dp"
+        android:textSize="16dp"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnGetCall"
+        android:textColor="@color/white"
+        android:text="@string/btn_accept_check_room"
+        android:textSize="@dimen/room_btn_font_size"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/btn_left_margin"
+        android:visibility="visible"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnChambermaidQuit"
+        android:textColor="@color/maroon"
+        android:text="@string/btn_quit"
+        android:textSize="@dimen/room_btn_font_size"
+        android:textStyle="bold"
+        android:layout_below="@+id/btnBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/btn_left_margin"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>

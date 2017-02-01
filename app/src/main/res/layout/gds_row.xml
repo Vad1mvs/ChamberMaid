@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:background="@drawable/list_selector"
+	android:padding="1dip">
+
+	<TextView
+		android:id="@+id/gdsNo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+        android:textSize="@dimen/gds_text_size"
+		android:text="1"
+        android:padding="2dp"
+		android:gravity="center_vertical" />
+
+	<TextView
+		android:id="@+id/gdsName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:textSize="@dimen/gds_text_size"
+		android:text="goods name"
+        android:paddingLeft="30dp"
+		android:paddingRight="66dp"
+		android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/gdsStoreQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/gds_text_size"
+        android:layout_toLeftOf="@+id/gdsQuantity"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="1"
+        android:textStyle="normal" />
+
+    <TextView
+		android:id="@+id/gdsQuantity"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textSize="@dimen/gds_text_size"
+		android:layout_toLeftOf="@+id/gdsSoldQuantity"
+		android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+		android:text="1"
+		android:textStyle="normal" />
+
+	<TextView
+		android:id="@+id/gdsSoldQuantity"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:textSize="@dimen/gds_text_size"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="4dp"
+        android:layout_centerVertical="true"
+		android:text="0"
+		android:textStyle="bold" />
+
+</RelativeLayout>

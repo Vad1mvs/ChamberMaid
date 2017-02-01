@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">ChamberMaid</string>
+    <string name="app_name_ru">Горничная</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="action_refresh">Обновить данные о номерах</string>
+    <string name="action_insert">Обновить список</string>
+    <string name="title_activity_welcome">Горничная</string>
+    <string name="title_soft_welcome">ГОРНИЧНАЯ</string>
+    <string name="title_welcome">\u00A9 Copyright 2015 Фирма ЮТИС</string>
+    <string name="title_version">"версия программы "</string>
+    <string name="m_auth">Для дальнейшей работы необходимо пройти аутентификацию!</string>
+    <string name="title_activity_login">Вход в систему</string>
+    <string name="btn_auth_name">Вход по паролю</string>
+    <string name="btn_auth_simple">Автоматический</string>
+    <string name="msg_auth_error">Ошибка авторизации</string>
+    <string name="title_auth">Аутентификация</string>
+    <string name="m_wait_answer">"Ожидаем ответ..."</string>
+    <string name="msg_welcome">Добро пожаловать в систему!</string>
+    <string name="m_update_avail">Доступно обновление программы!</string>
+    <string name="m_update_dictionaries">Обновить справочники</string>
+    <string name="m_disable_conn_service">Отключить сервис подключений</string>
+    <string name="m_enable_conn_service">Включить сервис подключений</string>
+    <string name="action_full_exit">Прекратить работу программы</string>
+    <string name="action_show_log">Лог программы</string>
+    <string name="action_help">Помощь</string>
+    <string name="caption_choose_user">Выберите пользователя:</string>
+    <string name="caption_choose_owner">Выберите предприятие:</string>
+    <string name="caption_choose_logview">Выберите тип</string>
+    <string name="caption_choose_date">Выберите дату</string>
+    <string name="title_input_comment">Введите сообщение</string>
+    <string name="title_msg">Сообщение</string>
+
+    <string name="title_gds_count">"Товаров в минибаре: "</string>
+    <string name="title_init_load">"Загружаем данные..."</string>
+    <string name="title_parse">"Обрабатываем данные..."</string>
+    <string name="title_init_post">"Начинаем передачу команды..."</string>
+    <string name="m_floor">" этаж"</string>
+    <string name="btn_bar">МИНИБАР</string>
+    <string name="btn_accept_check_room">ПРИНЯТЬ ВЫЗОВ</string>
+    <string name="btn_accept_check_call">ПРИНЯТЬ ВЫЗОВ</string>
+    <string name="btn_need_service">УБОРКА</string>
+    <string name="btn_need_change_bed">"  БЕЛЬЕ  "</string>
+    <string name="btn_service">" УБРАН "</string>
+    <string name="btn_quit">НОМЕР ПРИНЯТ</string>
+    <string name="btn_msg">ТЕХНИК</string>
+    <string name="btn_sale">ПРОДАЖА</string>
+    <string name="btn_store">ПЕРЕМЕЩЕНИЕ</string>
+    <string name="m_get_room_status_ok">Статус комнат обновлен</string>
+    <string name="m_post_ok">Команда успешно передана</string>
+    <string name="m_post_err">Ошибка при обработке команды на сервере</string>
+    <string name="m_post_goods_sale">Отправить</string>
+
+    <string name="m_change_bed">"Дата смены белья: "</string>
+    <string name="m_departure_date">"Дата выселения: "</string>
+    <string name="m_reservation_date">"Забронирован с: "</string>
+
+    <string name="m_dev_info">Модель \%%s; Android: \%%s</string>
+    <string name="m_error">OШИБКА</string>
+    <string name="btn_done">OK</string>
+    <string name="btn_yes">Да</string>
+    <string name="btn_no">Нет</string>
+    <string name="m_cntr">Записей: %d</string>
+    <string name="m_room_cntr">№\%%d; товаров: \%%d; продано: \%%d; осталось: \%%d</string>
+    <string name="m_room_cntr2"> Позиций: \%%d; продано: \%%d; осталось: \%%d</string>
+    <!--<string name="m_room_cntr2"> Позиций: \%%d; продано: \%%d; осталось: \%%d</string>-->
+    <string name="title_ask_sure">Вы уверены?</string>
+    <string name="undo">ОТМЕНИТЬ</string>
+    <string name="deleted">Удалено</string>
+    <string name="selected">Выбрано</string>
+    <string name="new_user">НОВЫЙ ПОЛЬЗОВАТЕЛЬ</string>
+    <string name="btn_scan_barcode">Сканер штрихкода</string>
+    <string name="btn_start_scan">Сканировать</string>
+    <string name="title_activity_bar_scan">Сканирование штрихкода</string>
+    <string name="bar_scan_prompt">Наведите луч сканера на штрихкод</string>
+    <string name="title_get_barscancode">Обновить справочник штрихкодов</string>
+    <string name="title_activity_log">Лог программы</string>
+    <string name="action_send_log">Переслать лог</string>
+    <string name="action_clear_msg">Удалить все сообщения</string>
+    <string name="action_clear_log">Очистить лог</string>
+    <string name="m_read_data">"Считываем данные..."</string>
+    <string name="m_send_log">"Готовим лог к передаче..."</string>
+    <string name="m_send_data">"Передача данных..."</string>
+    <string name="action_refresh_log">Обновить лог</string>
+    <string name="title_activity_job_select">Выбор работы</string>
+    <string name="title_activity_eq_select">Выбор оборудования</string>
+    <string name="caption_get_job">Выберите требуемую работу</string>
+    <string name="caption_choose_specs">Выберите оборудование</string>
+    <string name="m_job_group">"Групп работ: "</string>
+    <string name="m_eq_group">"Групп оборудования: "</string>
+    <string name="m_jobs">"Работ: "</string>
+    <string name="m_eqs">"Оборудования: "</string>
+    <string name="title_activity_job_group_select">Выбор работы</string>
+    <string name="title_activity_ent_select">Выбор контрагента</string>
+    <string name="caption_get_ent">Выберите требуемого контрагента</string>
+    <string name="ent_search">Поиск контрагента...</string>
+    <string name="m_search">Поиск...</string>
+    <string name="title_activity_ent_group_select">Выбор группы контрагентов</string>
+    <string name="m_ent_group">"Групп контрагентов: "</string>
+    <string name="title_activity_invoice_edit">Накладная</string>
+    <string name="m_count">"Всего записей: "</string>
+    <string name="m_total">"ВСЕГО: "</string>
+    <string name="m_num">Номер</string>
+    <string name="m_barcode">Штрихкод</string>
+    <string name="m_date_lbl">от</string>
+    <string name="m_date">Дата</string>
+    <string name="m_type">Тип</string>
+    <string name="m_warehouse">Со склада</string>
+    <string name="m_warehouse2">"На склад "</string>
+    <string name="time_caption">Установка времени</string>
+    <string name="date_caption">Установка даты</string>
+    <string name="action_add_invoice">Добавить</string>
+    <string name="action_add_invoice_cont_srl">Добавить серийный номер</string>
+    <string name="action_enter_barcode">Ввести штрихкод</string>
+    <string name="m_select_ent">Контрагент</string>
+    <string name="m_select_ent_group">Группы</string>
+    <string name="m_lbl_supplier">Поставщик</string>
+    <string name="m_lbl_recipient">Получатель</string>
+    <string name="m_invoice_cntr">"Накладных: "</string>
+    <string name="m_invoice_cont_cntr">"Позиций: "</string>
+    <string name="action_delete_invoice">Удалить</string>
+    <string name="action_edit_invoice">Изменить</string>
+    <string name="action_send_invoice">Переслать</string>
+    <string name="action_change_status">Изменить статус</string>
+    <string name="action_get_invoice_marks">Загрузить отметки</string>
+    <string name="action_edit_invoice_cont_srl">Изменить с/н</string>
+    <string name="m_na">н/д</string>
+    <string name="title_activity_invoice_cont">Содержание</string>
+    <string name="action_delete">Удалить</string>
+    <string name="m_cntrs">Количество</string>
+    <string name="title_error">Ошибка</string>
+    <string name="msg_barcode_error">"Не найден товар, соответствующий штрихкоду "</string>
+    <string name="action_download">Загрузка ПО</string>
+    <string name="m_exec_emp">МОЛ {{-</string>
+    <string name="m_exec_emp_from">"МОЛ -}}"</string>
+    <string name="i_income">Приход</string>
+    <string name="i_outgo">Расход</string>
+    <string name="i_move">Перемещение</string>
+    <string name="i_inventory">Инвентаризация</string>
+    <string name="m_srl">"Укажите серийный номер"</string>
+    <string name="m_input_srl">"Введите номер"</string>
+    <string name="m_no">№</string>
+    <string name="m_accept_check_number">Необходимо отреагировать на оповещение "принять номер" - кнопка "ПРИНЯТЬ НОМЕР"</string>
+    <string name="m_update_download">Выполняется загрузка новой версии ПО</string>
+    <string name="m_actual_ver">Используется последняя версия программы</string>
+    <string name="m_file_not_found">"Не найден файл "</string>
+
+    <string-array name="invoice_types">
+        <item>@string/i_income</item>
+        <item>@string/i_outgo</item>
+        <item>@string/i_move</item>
+        <item>@string/i_inventory</item>
+    </string-array>
+    <string-array name="invoice_type_array">
+        <item>Все накладные</item>
+        <item>@string/i_income</item>
+        <item>@string/i_outgo</item>
+        <item>@string/i_move</item>
+        <item>@string/i_inventory</item>
+    </string-array>
+    <string-array name="log_level_names">
+        <item>Все</item>
+        <item>Исключение</item>
+        <item>Ошибка</item>
+        <item>Предупреждение</item>
+        <item>Отладка</item>
+        <item>Информация</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_enter_barcode">Введите штрихкод</string>
+    <string name="title_activity_invoice_cont_srl">Серийные номера</string>
+    <string name="title_activity_scan_ht518">Сканирование</string>
+    <string name="title_activity_main_rooms">Комнаты</string>
+    <string name="title_activity_room_bar_goods">Минибар</string>
+    <string name="title_activity_rooms_list">Список комнат</string>
+    <string name="title_activity_hotel_room">Гостиница</string>
+    <string name="title_activity_hotel_rooms_activity2">Гостиница</string>
+    <string name="title_activity_room">Комната</string>
+    <string name="title_activity_room_bar_select">Минибар</string>
+    <string name="title_activity_show_dump">Ответ сервера</string>
+    <string name="title_activity_hotel_rooms_swipe">Комнаты</string>
+    <string name="title_activity_room_swipe">Комната</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
